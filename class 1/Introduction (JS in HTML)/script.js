@@ -1,0 +1,1 @@
+document.getElementById('tercera-demostración').innerHTML = 'Este texto ha sido insertado al final del body, y es la tercera forma';

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS lesson</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            padding: 1em 3em;
+            background-color: aqua;
+            border: none;
+            border-radius: 20em;
+        }
+        button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¿Que es lo que puedo hace con Javascript?</h1>
+    <p id="demostración">Este texto será transformado por JS</p>
+    <hr>
+    <p id="segunda-demostración"></p>
+    <hr>
+    <p id="tercera-demostración"></p>
+    <!--PRIMER FORMA: inline-->
+    <button
+        onclick="if(document.getElementById('demostración').innerHTML === 'Texto transformado por JS'){document.getElementById('demostración').innerHTML='Este texto será transformado por JS'}else{document.getElementById('demostración').innerHTML='Texto transformado por JS'};">usar JS</button>
+    <!--SEGUNDA FORMA: al finalizar del body-->
+    <script>
+        document.getElementById('segunda-demostración').innerHTML = 'Este texto ha sido insertado al final del body, y es la segunda forma';
+    </script>
+    <!--TERCERA FORMA: TAG-->
+    <script src="script.js"></script>
+</body>
+</html>
